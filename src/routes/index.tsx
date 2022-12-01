@@ -5,17 +5,12 @@ import {
     Redirect,
 } from "react-router-dom";
 import { Demo } from '../pages';
+import Login from '../pages/login/Login';
 
 function Routes() {
     return (
         <Switch>
-            <Route exact path="/" component={Demo} />
-            <Route exact path="/page-not-found">
-                <h1>Page not found</h1>
-            </Route>
-            <Route>
-                <Redirect to="/page-not-found" />
-            </Route>
+            <Route exact path="/" component={Login} />
         </Switch>
     )
 }
